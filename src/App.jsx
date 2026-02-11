@@ -43,6 +43,8 @@ const App = () => {
   const [blackVisible, setBlackVisible] = useState(false)
   const [showVideo, setShowVideo] = useState(false)
 
+  const videoSrc = `${import.meta.env.BASE_URL}/fleurenascii.mp4`;
+
   // Typewriter final
   const [finalText, setFinalText] = useState('')
   const [displayedFinal, setDisplayedFinal] = useState('')
@@ -201,7 +203,6 @@ const App = () => {
         }} />
       )}
 
-      const videoSrc = `${import.meta.env.BASE_URL}fleurenascii.mp4`;
 
       {/* Vidéo */}
       {finished && showVideo && (
