@@ -3,7 +3,7 @@ import DotGrid from './DotGrid'
 
 const questions = [
   {
-    text: "Aimes-tu le chocolat ?",
+    text: "Veux-tu êtres ma valentine ?",
     buttons: [
       { label: "Oui", color: "#27a745" },
       { label: "Non", color: "#d02828" }
