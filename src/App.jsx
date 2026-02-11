@@ -201,10 +201,12 @@ const App = () => {
         }} />
       )}
 
+      const videoSrc = `${import.meta.env.BASE_URL}fleurenascii.mp4`;
+
       {/* Vidéo */}
       {finished && showVideo && (
         <video
-          src={`${import.meta.env.BASE_URL}/fleurenascii.mp4`}
+          src={videoSrc}
           autoPlay
           muted
           loop
