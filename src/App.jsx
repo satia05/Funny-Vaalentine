@@ -98,7 +98,7 @@ const App = () => {
       setTimeout(() => {
         setFadeToBlack(true)
         setTimeout(() => setBlackVisible(true), 1000)
-        setTimeout(() => setShowVideo(true), 4000) // démarre la vidéo après fade
+        setTimeout(() => setShowVideo(true), 3000) // démarre la vidéo après fade
       }, 2000) // pause 2s pour lire le texte final
     }
   }, [finalCharIndex, finalText])
@@ -202,9 +202,9 @@ const App = () => {
       )}
 
       {/* Vidéo */}
-      {showVideo && (
+      {finished && showVideo && (
         <video
-          src={`${import.meta.env.BASE_URL}Funny-Vaalentine/fleurenascii.mp4`}
+          src={`${import.meta.env.BASE_URL}/fleurenascii.mp4`}
           autoPlay
           muted
           loop
@@ -214,7 +214,7 @@ const App = () => {
             top: '50%', left: '50',
             transform: 'translate(50%, -50%)',
             width: '50vw', height: '50vh',
-            objectFit: 'contain', zIndex: 9
+            objectFit: 'contain', zIndex: 20
           }}
         />
       )}
