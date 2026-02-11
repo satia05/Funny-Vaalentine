@@ -204,7 +204,7 @@ const App = () => {
       {/* Vidéo */}
       {showVideo && (
         <video
-          src="/fleurascii.mov"
+          src={`${import.meta.env.BASE_URL}video.mp4`}
           autoPlay
           muted
           loop
